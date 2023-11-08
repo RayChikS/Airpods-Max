@@ -1,0 +1,275 @@
+/**
+	|============================
+	| default styles
+	|============================
+*/
+/* font-family: 'Inter',
+sans-serif; */
+
+*,*::after,*::before{
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+
+button {
+	cursor: pointer;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+ul,ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+body{
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+	color: #000;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.2;
+
+}
+
+.container{
+	max-width: 1220px; 
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+/**
+	|============================
+	| header
+	|============================
+*/
+
+.header{
+	min-height: 100vh;
+	position: relative;
+}
+.header-top{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px 0;
+}
+.header-content-images{
+	text-align: center;
+	padding-bottom: 50px;
+}
+.header-content-images::before{
+	content: '';
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	right: 0;
+	position: absolute;
+	background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
+	z-index: -2;
+}
+
+
+
+.nav{
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	font-weight: 700;
+}
+.nav-btn{
+	padding: 15px 58px;
+	border-radius: 30px;
+	background-color: #000;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+.title {
+	position: absolute;
+	padding-top: 110px;
+	font-weight: 700;
+	font-size: 210px;
+}
+.title-pod{
+	position: relative;
+	z-index: -1;
+}
+.title-s{
+	display: inline-block;
+	transform: translateY(60px);
+}
+.title-m{
+	display: inline-block;
+	transform: translate(-58px, 273px);
+}
+.title-ax{
+	position: absolute;
+	top: 550px;
+	right: -160px;
+	z-index: -1;
+}
+
+
+/**
+	|============================
+	| MAIN
+	|============================
+*/
+
+.choose{
+	/* padding: 45px 0 180px; */
+	padding-top: 35px;
+	padding-bottom: 35px;
+	text-align: center;
+}
+.choose-title{
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.choose-text{
+	margin-bottom: 80px;
+	font-size: 16px;
+	font-weight: 500;
+}
+.choose-list{
+	display: flex;
+	gap: 40px;
+	align-items: center;
+	justify-content: center;
+}
+.choose-list-btn{
+	padding: 55px 50px;
+	border-radius: 20px;
+	border: 1px solid  #777;
+	background: rgba(217, 217, 217, 0.00);
+}
+
+
+
+
+.original{
+	padding-bottom: 35px;
+	text-align: center;
+}
+.original-title{
+	font-size: 64px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.original-text{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 40px;
+	max-width: 660px;
+}
+.original-info{
+	display: flex;
+	justify-content: center;	
+	gap: 150px;
+}
+.original-list-item{
+	max-width: 230px;
+}
+.original-list-item:not(:last-child){
+	margin-bottom: 80px;
+}
+.list-item-text{
+	font-size: 16px;
+	font-weight: 500;
+}
+
+
+
+.about-battery{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	text-align: center;
+}
+.about-battery-title{
+	margin-bottom: 17px;
+	font-weight: 700;
+	font-size: 64px;
+}
+.about-battery-text{
+	margin-bottom: 40px;
+	font-size: 16px;
+	font-weight: 500;
+}
+.battery-text-span{
+	font-weight: 700;
+	font-size: 16px;
+}
+
+
+
+.alive{
+	padding: 80px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+.alive-title{
+	margin-bottom: 40px;
+	font-weight: 700;
+	font-size: 64px;
+}
+.alive-number{
+	margin-bottom: 40px;
+	font-weight: 700;
+	font-size: 210px;
+}
+.alive-text{
+	margin: 0 auto;
+	max-width: 403px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+
+
+
+.beauty{
+	padding-top: 35px;
+	padding-bottom: 35px;
+	text-align: center;
+	background-image: url(../images/beauty-section.jpg);
+}
+.beauty-text{
+	color: #fff;
+	max-width: 300px;
+}
+.beauty-btn{
+
+}
