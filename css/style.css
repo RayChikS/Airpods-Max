@@ -261,15 +261,98 @@ body{
 
 
 .beauty{
+	position: relative;
 	padding-top: 35px;
 	padding-bottom: 35px;
-	text-align: center;
+}
+.beauty::before	{
+	content: '';
 	background-image: url(../images/beauty-section.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	position: absolute;
+	z-index: -2;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+.beauty::after{
+	content: '';
+	position: absolute;
+	background-image: url(../images/sound.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+	bottom: -150px;
+	width: 100%;
+	height: 150vh;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+.beauty-inner{
+	min-height: 200vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.beauty-box{
+	text-align: center;
+	padding-bottom: 30vh;
 }
 .beauty-text{
 	color: #fff;
 	max-width: 300px;
+	margin-bottom: 15px;
+	font-weight: 500;
 }
 .beauty-btn{
-
+	padding: 15px 58px;	
+	border-radius: 30px;
+	background-color: #FFF;
+	margin-top: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
+
+/**
+	|============================
+	| FOOTER
+	|============================
+*/
+
+.footer{
+	color: #fff;
+	position: relative;
+	z-index: -2;
+	text-align: center;
+	padding: 250px 0 40px;
+	background-color: #000;
+}
+.footer-link{
+	font-weight: 700;
+}
+.footer-text{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-weight: 700;
+}
+.footer-list {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+	margin-top: 80px;
+}
+.footer-item{
+	font-weight: 700;
+}
+
+
+
+
+
