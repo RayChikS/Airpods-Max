@@ -92,10 +92,30 @@ body{
 	left: 0;
 	right: 0;
 	position: absolute;
-	background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
+	
 	z-index: -2;
 }
-
+.header-content-images:has(.blue.content-active)::before{
+	background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
+}
+.header-content-images:has(.red.content-active)::before{
+	background: linear-gradient(180deg, #F3D6D1 0%, rgba(235, 235, 235, 0.00) 100%);
+}
+.header-content-images:has(.black.content-active)::before{
+	background: linear-gradient(180deg, #B6B6B6 0%, rgba(235, 235, 235, 0.00) 100%);
+}
+.header-content-images:has(.green.content-active)::before{
+	background: linear-gradient(180deg, #DDEAD9 0%, rgba(235, 235, 235, 0.00) 100%);
+}
+.header-content-images:has(.white.content-active)::before{
+	background: linear-gradient(180deg, #FAFAFA 0%, rgba(235, 235, 235, 0.00) 100%);
+}
+.content-images-item{
+	display: none;
+}
+.content-images-item.content-active{
+	display: inline-block;
+}
 
 
 .nav{
@@ -173,6 +193,9 @@ body{
 	border-radius: 20px;
 	border: 1px solid  #777;
 	background: rgba(217, 217, 217, 0.00);
+}
+.btn-active{
+	display: none;
 }
 
 
