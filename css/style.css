@@ -95,6 +95,7 @@ body{
 	
 	z-index: -2;
 }
+
 .header-content-images:has(.blue.content-active)::before{
 	background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
 }
